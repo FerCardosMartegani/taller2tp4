@@ -1,0 +1,675 @@
+
+/*---------------------------------------------------------------------------------------------------DESKTOP & MOBILE */
+
+/*--------------------------------------------------------------------------------tipografías */
+@font-face {
+  font-family: "Raleway";
+  src: url("../assets/fonts/Raleway/Raleway-VariableFont_wght.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto Slab";
+  src: url("../assets/fonts/Roboto_Slab/RobotoSlab-VariableFont_wght.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, body {
+  font-size: 10px;
+  font-family: "Roboto Slab", serif;
+}
+* {
+  box-sizing: border-box !important; /* Importante: esto hace que el tamaño de todas las cajas contemple el padding */
+}
+
+/*--------------------------------------------------------------------------------header */
+header {
+  width: 100%;
+  height: 64px;
+
+  background-color: #14141B;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header img{
+  height: 48px;
+}
+
+/*--------------------------------------------------------------------------------separador */
+.separador {
+  height: 1px;
+
+  background-color: #B98E4E;
+}
+
+/*--------------------------------------------------------------------------------botones */
+.quieroVotar, #confirmar {
+  background-color: #FFCF40;
+
+  font-weight: bold;
+  border: none;
+
+  transition: all 0.2s ease-in-out;
+}
+.quieroVotar:hover, #confirmar:hover, .red img:hover {
+  background-color: red;
+  color:white;
+}
+
+/*--------------------------------------------------------------------------------texto */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway", sans-serif;
+}
+span, a {
+  color: #B98E4E;
+  text-decoration: none;
+  font-family: "Roboto Slab", serif;
+  font-weight: bold;
+}
+p {
+  font-family: "Roboto Slab", serif;
+}
+
+/*--------------------------------------------------------------------------------imágenes */
+.imagenFondo {
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.imagenHover:hover {
+  transition: all 0.2s ease-in-out;
+  background-color: white;
+  opacity: .75;
+}
+
+/*--------------------------------------------------------------------------------portada */
+section#portada {
+  width: 100vw;
+  height: 85vh;
+  margin: 0px 0px 80px 0px;
+  
+  background-color: black;
+  color: white;
+}
+
+/*--------------------------------------------------------------------------------está en tus manos */
+section#enTusManos {
+  width: 100%;
+  margin: 0px 0px 80px 0px;
+  
+  background-color: white;
+  color: black;
+}
+section#enTusManos h1 {
+  margin: 0px 255px 40px;
+}
+section#enTusManos p {
+  margin: 32px 255px;
+}
+section#enTusManos .bullets{
+  margin: 0px 255px 40px;
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+section#enTusManos .bullet{
+  width: 457px;
+  height: 320px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: end;
+  column-gap: 16px;
+
+  color: white;
+}
+section#enTusManos .bullet h4 {
+  width: 100%;
+  height: auto;
+  margin: 0px;
+  padding: 16px 32px;
+
+  background-color: rgba(0, 0, 0, 0.60);
+}
+section#enTusManos #bullet1{
+  background-image: url(../assets/img/bullet1.png);
+}
+section#enTusManos #bullet2{
+  background-image: url(../assets/img/bullet2.png);
+}
+section#enTusManos #bullet3{
+  background-image: url(../assets/img/bullet3.png);
+}
+
+/*--------------------------------------------------------------------------------podría ser el tuyo */
+section#votados {
+  width: 100%;
+  height: auto;
+  margin: 0px 0px 80px 0px;
+  padding: 80px 0px;
+  
+  background-color: black;
+  color: white;
+}
+section#votados .votado {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: start;
+}
+section#votados .votado h5{
+  margin: 0px 36px;
+  padding: 8px;
+
+  background-color: #B98E4E;
+  color: black;
+  font-weight: bold;
+}
+section#votados .votado h4{
+  width: auto;
+  margin: 8px 36px;
+  padding: 8px;
+
+  background-color: black;
+}
+section#votados #ganador {
+  background-image: url(../assets/img/votadas1.png);
+}
+section#votados #perdedor1 {
+  background-image: url(../assets/img/votadas2.png);
+}
+section#votados #perdedor2 {
+  background-image: url(../assets/img/votadas3.png);
+}
+
+/*--------------------------------------------------------------------------------anotate ya */
+section#anotateYa {
+  width: 100%;
+  height: auto;
+  margin: 0px 0px 80px 0px;
+  
+  background-color: white;
+  color: black;
+}
+section#anotateYa .camposDeTexto h5 {
+  margin: 32px 0px 0px;
+}
+section#anotateYa .camposDeTexto input {
+  width: 695px;
+  height: 80px;
+  margin: 16px 0px 0px;
+  padding: 32px;
+
+  border: 0px;
+  outline: none!important;
+  background-color: #989898;
+}
+
+/*--------------------------------------------------------------------------------footer */
+footer {
+  background-color: #14141B;
+}
+footer .red a {
+  transition: all 0.2s ease-in-out;
+}
+footer .red h6 {
+  color: white;
+}
+footer .red img {
+  background-color: #989898;
+  border-radius: 50%;
+}
+footer .red #face{
+  grid-area: FACE;
+}
+footer .red #insta{
+  grid-area: INSTA;
+}
+footer .red #twitter{
+  grid-area: TWITTER;
+}
+footer .red #youtube{
+  grid-area: YOUTUBE;
+}
+
+/*--------------------------------------------------------------------------------feedback */
+div#feedback {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgba(0, 0, 0, 0.50);
+}
+div#feedback .popUp {
+  width: 1141px;
+  height: 464px;
+  padding: 218px;
+
+  background-color: white;
+  color: black;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+div#feedback .parrafoFeedback {
+  margin: 24px;
+}
+
+div.oculto {
+  display: none!important;
+}
+
+
+/*---------------------------------------------------------------------------------------------------DESKTOP ONLY */
+
+@media screen and (min-width: 501px){
+
+  /*--------------------------------------------------------------------------------separador */
+  .separador {
+    width: 85%;
+    margin: 24px auto 16px;
+  
+    background-color: #B98E4E;
+  }
+  /*--------------------------------------------------------------------------------botones */
+  .quieroVotar, #confirmar {
+    width: 337px;
+    height: 96px;
+    margin: 16px 255px;
+  }
+
+  /*--------------------------------------------------------------------------------texto */
+  h1 {
+    font-size: 4.8rem;
+  }
+  h2 {
+    font-size: 4rem;
+  }
+  h3 {
+    font-size: 3.6rem;
+  }
+  h4, #confirmar{
+    font-size: 3.2rem;
+    line-height: 3.6rem;
+  }
+  h5, p, .quieroVotar, .campoDeTexto{
+    font-size: 2.4rem;
+    line-height: 3rem;
+  }
+  h6 {
+    font-size: 1.6rem;
+  }
+
+  /*--------------------------------------------------------------------------------portada */
+  section#portada .portadaCompleta {
+    padding: 312px 0px;
+
+    width: 100%;
+    height: 100%;
+    margin: auto;
+  
+    background-image: url(../assets/img/fondoPortada.png);
+  }
+  section#portada h1 {
+    margin: 0px 255px 40px;
+  }
+  section#portada h3 {
+    margin: 32px 255px;
+  }
+
+  /*--------------------------------------------------------------------------------está en tus manos */
+  section#enTusManos {
+    width: 100%;
+    margin: 0px 0px 80px 0px;
+  }
+  section#enTusManos h1 {
+    margin: 0px 255px 40px;
+  }
+  section#enTusManos p {
+    margin: 32px 255px;
+  }
+  section#enTusManos .bullets{
+    margin: 0px 255px 40px;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    column-gap: 16px;
+  }
+  section#enTusManos .bullet{
+    width: 457px;
+    height: 320px;
+  }
+
+  /*--------------------------------------------------------------------------------podría ser el tuyo */
+  section#votados h1 {
+    margin: 0px 255px 40px;
+  }
+  section#votados p {
+    margin: 32px 255px;
+  }
+  section#votados .votados {
+    margin: 0px 255px 40px;
+    
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "GANADOR PERDEDOR1"
+      "GANADOR PERDEDOR2";
+    column-gap: 16px;
+    row-gap: 16px;
+  }
+  section#votados .votado h5{
+    margin: 0px 36px;
+    padding: 8px;
+  }
+  section#votados .votado h4{
+    width: auto;
+    margin: 8px 36px;
+    padding: 8px;
+  }
+  section#votados #ganador {
+    height: 488px;
+    grid-area: GANADOR;
+  }
+  section#votados #perdedor1 {
+    height: auto;
+    grid-area: PERDEDOR1;
+  }
+  section#votados #perdedor2 {
+    height: auto;
+    grid-area: PERDEDOR2;
+  }
+
+  /*--------------------------------------------------------------------------------anotate ya */
+  section#anotateYa .formDividido {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  section#anotateYa h1 {
+    margin: 0px 0px 40px 255px;
+  }
+  section#anotateYa p {
+    margin: 32px 0px 32px 255px;
+  }
+  section#anotateYa .camposDeTexto {
+    margin: 0px 0px 40px 255px;
+  }
+  section#anotateYa .camposDeTexto h5 {
+    margin: 32px 0px 0px;
+  }
+  section#anotateYa .camposDeTexto input {
+    width: 695px;
+    height: 80px;
+    margin: 16px 0px 0px;
+    padding: 32px;
+  }
+  section#anotateYa .formImagen{
+    width: 100%;
+    height: auto;
+    min-height: 563px;
+    margin: 0px 255px 0px 0px;
+  
+    background-image: url(../assets/img/fondoForm.png);
+    background-position: right;
+  }
+  
+  /*--------------------------------------------------------------------------------footer */
+  footer {
+    width: 100%;
+    height: 264px;
+    margin: 0px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  footer .redes {
+    margin: 0px 0px 0px 260px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "FACE TWITTER"
+      "INSTA YOUTUBE";
+    column-gap: 96px;
+    row-gap: 16px;
+  }
+  footer .red a {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+  }
+  footer .red img {
+    margin: 16px;
+  }
+
+  /*--------------------------------------------------------------------------------feedback */
+  div#feedback .popUp {
+    width: 1141px;
+    height: 464px;
+    padding: 218px;
+  }
+  div#feedback .parrafoFeedback {
+    margin: 24px;
+  }
+}
+
+
+/*---------------------------------------------------------------------------------------------------MOBILE ONLY */
+
+@media screen and (max-width: 500px){
+
+  /*--------------------------------------------------------------------------------separador */
+  .separador {
+    width: 100%;
+    margin: 24px 16px 16px;
+  }
+
+  /*--------------------------------------------------------------------------------botones */
+  .quieroVotar, #confirmar {
+    width: 198px;
+    height: 48px;
+    margin: 16px 16px;
+  }
+
+  /*--------------------------------------------------------------------------------texto */
+  h1 {
+    font-size: 3.2rem;
+  }
+  h2 {
+    font-size: 2.4rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+  h4, #confirmar{
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+  }
+  h5, p, .quieroVotar, .campoDeTexto{
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+  h6 {
+    font-size: 1.2rem;
+  }
+
+  /*--------------------------------------------------------------------------------portada */
+  section#portada .portadaInferior {
+    width: 100%;
+    height: auto;
+    min-height: 272px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    
+    background-size: contain;
+    background-image: url(../assets/img/fondoPortada.png);
+  }
+  section#portada .portadaCompleta {
+    padding: 190px 0px;
+  }
+  section#portada h1 {
+    margin: 0px 16px 40px;
+  }
+  section#portada h3 {
+    margin: 32px 16px;
+  }
+
+  /*--------------------------------------------------------------------------------está en tus manos */
+  section#enTusManos h1 {
+    margin: 0px 16px 40px;
+  }
+  section#enTusManos p {
+    margin: 32px 16px;
+  }
+  section#enTusManos .bullets{
+    margin: 0px 16px 40px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    column-gap: 16px;
+  }
+  section#enTusManos .bullet{
+    width: 100%;
+    height: auto;
+    min-height: 160px;
+  }
+
+  /*--------------------------------------------------------------------------------podría ser el tuyo */
+  section#votados h1 {
+    margin: 0px 16px 40px;
+  }
+  section#votados p {
+    margin: 32px 16px;
+  }
+  section#votados .votados {
+    margin: 0px 16px 40px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    row-gap: 16px;
+  }
+  section#votados .votado h5{
+    margin: 0px 8px;
+    padding: 8px;
+  }
+  section#votados .votado h4{
+    width: auto;
+    margin: 4px 8px;
+    padding: 8px;
+  }
+  section#votados .votado {
+    background-size: cover;
+  }
+  section#votados #ganador {
+    width: 100%;
+    height: 160px;
+  }
+  section#votados #perdedor1, section#votados #perdedor2 {
+    width: 70%;
+    height: 120px;
+  }
+
+  /*--------------------------------------------------------------------------------anotate ya */
+  section#anotateYa h1 {
+    margin: 0px 0px 40px 16px;
+  }
+  section#anotateYa p {
+    margin: 32px 0px 32px 16px;
+  }
+  section#anotateYa .camposDeTexto {
+    margin: 0px 16px 40px;
+  }
+  section#anotateYa .camposDeTexto h5 {
+    margin: 32px 0px 0px;
+  }
+  section#anotateYa .camposDeTexto input {
+    width: 100%;
+    height: 32px;
+    margin: 16px 0px 0px;
+    padding: 32px;
+  }
+  section#anotateYa .formImagen{
+    display: none;
+  }
+  
+  /*--------------------------------------------------------------------------------footer */
+  footer {
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  footer .logo img{
+    width: 107px;
+    height: auto;
+    margin: 16px 0px 8px;
+  }
+  footer .redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 20px;
+  }
+  footer .red {
+    width: 48px;
+    height: 48px;
+    margin: 8px 0px 16px;
+  }
+  footer .red h6 {
+    display: none;
+  }
+
+  /*--------------------------------------------------------------------------------feedback */
+  div#feedback .popUp {
+    width: 281px;
+    height: 312px;
+    padding: 40px;
+  }
+  div#feedback .parrafoFeedback {
+    margin: 8px;
+  }
+}

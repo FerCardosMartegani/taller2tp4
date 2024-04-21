@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.4.js"
+      integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/index.js"></script>
+
+    <title>Votación semanal</title>
+    <link rel="icon" href="./assets/img/iconoCinefilos.png">
+  </head>
+
+  <body>
+    <!-- ----------------------------------------------------------------------------------HEADER -->
+    <header>
+      <a href="https://cinefilosoficial.com/"><img src="./assets/img/logoCinefilos.png" alt=“Logo”></a>
+    </header>
+
+    <!-- ----------------------------------------------------------------------------------PORTADA -->
+    <section id="portada">
+      <div class="portadaCompleta imagenFondo">
+        <h1>TE DEJAMOS ELEGIR</h1>
+        <div class="separador"></div>
+
+        <h3>Vos podés decidir cuál va a ser nuestro próximo artículo especial.</h3>
+        
+        <div class="portadaInferior imagenFondo">
+          <input class="quieroVotar" type="button" onClick="document.getElementById('anotateYa').scrollIntoView();" value="QUIERO VOTAR" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ----------------------------------------------------------------------------------ESTÁ EN TUS MANOS -->
+    <section id="enTusManos">
+      <h1>ESTÁ EN TUS MANOS</h1>
+      <div class="separador"><div class="linea"></div></div>
+      <p>Sólo con <span><a href="#anotateYa">anotarte</a></span>, vas a recibir cada lunes una encuesta para votar por el tema del próximo artículo especial de <span>nuestra página</span>. La opción más votada será la ganadora. ¿Será una recopilación de clásicos? ¿Una entrevista exclusiva a viejos conocidos? ¡Todo está en tus manos!</p>
+      
+      <div class="bullets">
+        <div class="bullet imagenFondo imagenHover" id="bullet1">
+          <h4>¿A qué actor deberíamos entrevistar?</h4>
+        </div>
+        <div class="bullet imagenFondo imagenHover" id="bullet2">
+          <h4>¿De qué película o serie deberíamos opinar?</h4>
+        </div>
+        <div class="bullet imagenFondo imagenHover" id="bullet3">
+          <h4>¿Algún clásico del que quieras saber más?</h4>
+        </div>
+      </div>
+
+      <input class="quieroVotar" type="button" onClick="document.getElementById('anotateYa').scrollIntoView();" value="QUIERO VOTAR" />
+    </section>
+   
+    <!-- ----------------------------------------------------------------------------------PODRÍA SER EL TUYO -->
+    <section id="votados">
+      <h1>PODRÍA SER EL TUYO</h1>
+      <div class="separador"><div class="linea"></div></div>
+      <p>Estos fueron los <span>artículos votados</span> la semana pasada, verás al ganador en nuestra página muy pronto. ¡El que <span><a href="#anotateYa">votes</a></span> podría ser el próximo!</p>
+      
+      <div class="votados">
+        <div class="votado imagenFondo imagenHover" id="ganador">
+          <h5>GANADOR</h5>
+          <h4>Ranking de la misión más imposible</h4>
+        </div>
+        <div class="votado imagenFondo imagenHover" id="perdedor1">
+          <h4>Películas que sólo algunos recordamos</h4>
+        </div>
+        <div class="votado imagenFondo imagenHover" id="perdedor2">
+          <h4>3 sagas viejas que siguen como nuevas</h4>
+        </div>
+      </div>
+    </section>
+
+    <!-- ----------------------------------------------------------------------------------ANOTATE YA -->
+    <section id="anotateYa">
+      <h1>ANOTATE YA</h1>
+      <div class="separador"><div class="linea"></div></div>
+      <div class="formDividido">
+        <div class="formulario">
+          <p>Decinos cómo querés recibir las votaciones:</p>
+          <form if="form" action="#">
+            <div class="camposDeTexto">
+              <div class="mail">
+                <h5>Correo electrónico:</h5>
+                <input required id="recibirMail" class="campoDeTexto" type="text" name="correo" placeholder="Tu dirección de correo electrónico">
+              </div>
+              <div class="nombre">
+                <h5>A nombre de:</h5>
+                <input required id="recibirNombre" class="campoDeTexto" type="text" name="nombre" placeholder="Tu nombre">
+              </div>
+            </div>
+
+            <input id="confirmar" type="submit" value="CONFIRMAR" />
+          </form>
+        </div>
+
+        <div class="formImagen imagenFondo"></div>
+      </div>
+    </section>
+
+    <!-- ----------------------------------------------------------------------------------FOOTER -->
+    <footer>
+      <div class="logo">
+        <a href="https://cinefilosoficial.com/"><img src="./assets/img/logoCinefilos.png" alt=“Logo”></a>
+      </div>
+      <div class="redes">
+        <div class="red" id="face">
+          <a href="https://www.facebook.com/cinefilooos">
+            <img src="./assets/img/logoFacebook.png" alt=“facebook”>
+            <h6>Facebook</h6>
+          </a>
+        </div>
+        <div class="red" id="insta">
+          <a href="https://www.instagram.com/cinefilosoficial/">
+            <img src="./assets/img/logoInsta.png" alt=“insta”>
+            <h6>Instagram</h6>
+          </a>
+        </div>
+        <div class="red" id="twitter">
+          <a href="https://twitter.com/cinefiloos">
+            <img src="./assets/img/logoTwitter.png" alt=twitter>
+            <h6>Twitter</h6>
+          </a>
+        </div>
+        <div class="red" id="youtube">
+          <a href="https://www.youtube.com/channel/UC08kA7iu9PEzDxkMf6_33Pw">
+            <img src="./assets/img/logoYoutube.png" alt=“youtube”>
+            <h6>Youtube</h6>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ----------------------------------------------------------------------------------FEEDBACK -->
+    <div class="oculto" id="feedback">
+      <div class="popUp">
+        <div class="parrafoFeedback">
+          <p>¡Listo, <span id="mostrarNombre">usuario</span>!</p>
+          <p>Vas a empezar a recibir las encuestas por:</p>
+          <p><span id="mostrarMail">mail@gmail.com</span></p>
+        </div>
+        <div class="parrafoFeedback">
+          <p>En breves te va a llegar la votación de esta semana,</p>
+          <p>recordá que tenés tiempo hasta el próximo domingo a las 23:59hs.</p>
+        </div>
+        <div class="parrafoFeedback">
+          <p>¡Que disfrutes!</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
